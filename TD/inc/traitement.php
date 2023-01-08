@@ -14,5 +14,11 @@ if (isset($_GET['idSupPanier'])){
     header('Location:../pages/panier.php');
 }
 
+if (isset($_GET['deleteAll'])){
+    $_SESSION['panier']= array();
+    header('Location:../pages/panier.php');
+
+}
+
 
 ?>

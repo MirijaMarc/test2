@@ -32,6 +32,20 @@ function getAllProduits($connexion){
      return $produit;
 }
 
+function TabNoRepeat($tableau){
+   $rep = array_unique($tableau);
+   return $rep;
+}
+
+function countQte($tableau){
+   $counts = array();
+   $tabNoRepeat = TabNoRepeat($tableau);
+   foreach ($tabNoRepeat as $element){
+      $counts[]=count(array_keys($tableau, $element));
+   }
+   return $counts;
+}
+
 
 
 ?>

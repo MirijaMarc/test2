@@ -18,4 +18,14 @@
     left: 5%;
     top: 102px;
 }
+.content_Panier_titre> :nth-child(2)> a{
+    position: relative;
+    left: 75%;
+    top: 26px;
+}
+.content_Panier_titre> :nth-child(3){
+    position: relative;
+    top: 27px;
+    left: -10%;
+}
 
